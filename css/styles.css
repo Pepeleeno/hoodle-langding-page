@@ -67,6 +67,8 @@ button {
   color: rgba(104, 75, 177, 1);
   margin-top: 24px;
   margin-left: 58px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
   cursor: pointer;
   transition: background-color 0.25s;
 }
