@@ -9,11 +9,13 @@ html {
 
 
 body {
-  background: url('/images/bg-desktop.svg') no-repeat;
-  background-size:cover;
+  background: url('/images/bg-desktop.svg'), url('/images/bg-mobile.svg') no-repeat;
+  background-size:cover, 0;
   background-color: #684BB1;
   width: 1440px;
   margin: auto;
+  /* display: flex; */
+  /* flex-direction: unset; */
 }
 
 header img {
@@ -111,3 +113,67 @@ footer :nth-child(3) {
 footer img:hover {
   filter: invert(45%) sepia(91%) saturate(1247%) hue-rotate(294deg) brightness(101%) contrast(105%);
 }
+
+/* MOBILE */
+@media screen and (max-width: 400px) {
+  body {
+    width: 375px;
+    background-size: 0, contain;
+  }
+  
+  main {
+    flex-direction: column;
+  }
+
+  header img {
+    margin-top: 38.2px;
+    margin-left: 40px;
+    width: 120px;
+    height: 19px;
+  }
+
+  .left-side img {
+    width: 296px;
+    height: 209px;
+    margin-top: 69.8px;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+
+  .right-side {
+    width: 304px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+    width: 280px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .right-side p {
+    font-size: 16px;
+    width: 304px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  button {
+    height: 40px;
+    /* font-weight: 400px; */
+    font-size: 12px;
+  }
+  
+  footer {
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  footer :nth-child(3) {
+    margin-right: 0;
+  }
+} 
