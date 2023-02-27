@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+}
+
+
+body {
+  background: url('/images/bg-desktop.svg') no-repeat;
+  background-size:cover;
+  background-color: #684BB1;
+  width: 1440px;
+  margin: auto;
+}
+
+header img {
+  width: 200px;
+  height: 32px;
+  margin-top: 64px;
+  margin-left: 80px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-side img {
+  margin-left: 81px;
+  margin-top: 104px;
+  margin-bottom: 108px;
+}
+
+
+.right-side p {
+  width: 520px;
+  font-family: open sans;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+  margin-left: 58px;
+  margin-right: 31px;
+  margin-top: 24px;
+}
+
+h1 {
+  font-family: poppins;
+  font-weight: 600;
+  color: white;
+  font-size: 40px;
+  margin-left: 58px;
+  margin-right: 31px;
+  margin-top: 136px;
+  width: 487px;
+}
+
+button {
+  width: 200px;
+  height: 56px;
+  border-radius: 28px;
+  font-family: poppins;
+  font-size: 18px;
+  color: rgba(104, 75, 177, 1);
+  margin-top: 24px;
+  margin-left: 58px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+
+button:hover {
+  background-color: rgba(232, 128, 232, 1);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%) sepia(48%) saturate(0%) hue-rotate(234deg) brightness(116%) contrast(101%);
+  cursor: pointer;
+  transition: filter 0.25s;
+}
+
+footer :nth-child(2) {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+footer :nth-child(3) {
+  margin-right: 80px;
+}
+
+.insta {
+  height: 45px;
+  width: 45px;
+}
+
+footer img:hover {
+  filter: invert(45%) sepia(91%) saturate(1247%) hue-rotate(294deg) brightness(101%) contrast(105%);
+}
